@@ -1,0 +1,166 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Me - Seena Sadhan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #dfd3c3; /* Earthy brown background */
+            margin: 0;
+            padding: 0;
+            color: #554e43; /* Dark olive text color */
+            background-image: url("{% static 'assets/img/08.jpg' %}");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: 10px solid #f9cda3; /* Orange border */
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background-color: rgba(255, 255, 255, 0.8); /* Light beige background with opacity */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+            transition: margin-top 0.5s ease-out;
+            text-align: center; /* Center align content */
+        }
+        .profile-image {
+            margin: 20px auto; /* Center align image */
+            border-radius: 50%;
+            overflow: hidden;
+            width: 200px;
+            height: 200px;
+            border: 5px solid #dfd3c3; /* Match the background color */
+        }
+        .profile-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        .profile-details {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .profile-details h1 {
+            font-size: 1.5em; /* Reduced font size */
+            margin-bottom: 5px; /* Smaller margin */
+            color: #554e43; /* Dark olive heading color */
+        }
+        .profile-details h2 {
+            font-size: 1em; /* Reduced font size */
+            margin-bottom: 5px; /* Smaller margin */
+            color: #7d7464; /* Light brown heading color */
+        }
+        .profile-details p {
+            line-height: 1.6;
+            color: #554e43; /* Dark olive text color */
+        }
+        .additional-content {
+            padding: 20px;
+            background-color: rgba(255, 218, 231, 0.8); /* Light pink background with opacity */
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            text-align: left;
+            margin-top: 20px;
+        }
+        .small-heading {
+            font-size: 2em; /* Larger font size */
+            color: #ff7f50; /* Coral orange */
+            margin-bottom: 10px;
+        }
+        .transparent-box {
+            padding: 20px;
+        }
+        .testimonial {
+            margin-bottom: 20px;
+            border-left: 5px solid #ff7f50; /* Coral orange border for testimonials */
+            padding-left: 15px;
+        }
+        @media (min-width: 768px) {
+            .container.sticky {
+                margin-top: -150px; /* Adjust as needed to hide the top part */
+            }
+            .additional-content.sticky {
+                margin-top: 0; /* Ensures the content aligns with the top */
+            }
+        }
+        footer {
+            background-color: rgba(255, 218, 231, 0.8); /* Light pink background with opacity for footer */
+            padding: 10px;
+            text-align: center;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Additional content with transparent box -->
+    <section class="additional-content sticky">
+        <div class="container">
+            <div class="transparent-box">
+                <h2 class="small-heading">What You Need to Know</h2>
+                <p>Therapy serves as a transformative journey towards personal growth and mental well-being. By providing a safe and supportive environment, therapy empowers individuals to explore their emotions, confront challenges, and develop healthier coping mechanisms. Through insightful sessions guided by trained therapists, people can gain self-awareness, identify destructive patterns, and foster resilience.</p>
+
+                <p>Therapy encourages introspection, leading to enhanced problem-solving skills and improved communication. It promotes a deeper understanding of oneself and others, fostering meaningful relationships and a more fulfilling life.</p>
+
+                <p>To initiate this journey, visitors can easily contact us through the "Contact Us" option on our homepage. This option leads to a user-friendly form where individuals can share their concerns and preferences. Once the form is submitted, our team promptly reviews the information provided and schedules a confidential consultation. During this consultation, specific goals and expectations are discussed to tailor therapeutic approaches to individual needs. Regular sessions are then scheduled to explore underlying issues, implement strategies for growth, and monitor progress. This structured approach aims to cultivate inner peace, facilitate personal development, and equip individuals with the tools needed to navigate life's challenges effectively.</p>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seena Sadhan profile details -->
+    <div class="container sticky">
+        <div class="profile-image">
+            <img src="{% static 'assets/img/07.jpg' %}" alt="Seena Sadhan">
+        </div>
+        <div class="profile-details">
+            <h1>Seena Sadhan</h1>
+            <h2>Qualifications</h2>
+            <p>Therapy offers profound benefits for mental wellbeing by providing a safe space for individuals to explore emotions, thoughts, and behaviors. Through therapeutic sessions, people can gain self-awareness, develop coping skills, and navigate life challenges more effectively. Therapists offer objective perspectives and support tailored to individual needs, fostering resilience and emotional growth. Therapy encourages healthy communication, enhances problem-solving abilities, and reduces feelings of isolation or anxiety. It promotes self-care and improves overall quality of life by addressing underlying issues and promoting positive change. Ultimately, therapy empowers individuals to cultivate inner peace, build meaningful relationships, and embrace personal growth.</p>
+        </div>
+    </div>
+
+    <!-- Testimonials section -->
+    <section class="additional-content sticky">
+        <div class="container">
+            <div class="transparent-box">
+                <h2 class="small-heading">Testimonials</h2>
+                <div class="testimonial">
+                    <p>"Working with Seena Sadhan has been life-changing. Their empathetic approach and deep understanding have helped me navigate through difficult times with clarity and confidence."</p>
+                    <p>- John Doe</p>
+                </div>
+                <div class="testimonial">
+                    <p>"I highly recommend Seena Sadhan's therapy services. They create a safe and supportive environment where you can explore and heal."</p>
+                    <p>- Jane Smith</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer section -->
+    <footer class="container">
+        <p>&copy; 2024 Seena Sadhan. All rights reserved.</p>
+    </footer>
+
+    <script>
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.querySelector('.container').classList.add('sticky');
+                document.querySelector('.additional-content').classList.add('sticky');
+            } else {
+                document.querySelector('.container').classList.remove('sticky');
+                document.querySelector('.additional-content').classList.remove('sticky');
+            }
+        }
+    </script>
+</body>
+</html>
